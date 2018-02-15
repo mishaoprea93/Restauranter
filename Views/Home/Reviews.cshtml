@@ -1,0 +1,8 @@
+<h1>Here are all reviews!</h1>
+<br>
+<br> @foreach(var review in ViewBag.reviews){
+
+<h5>Review For: @review.RestaurantName - @review.Stars Stars</h5>
+<h6 class="shifted">Reviewer: @review.ReviewerName , @review.Date</h6>
+<h6 class="shift">@review.ReviewContext</h6>
+<hr/> }
